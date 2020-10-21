@@ -1,0 +1,45 @@
+.footer {
+  position: relative;
+  color: #fff;
+  bottom: 150px;
+  display: flex;
+  margin: 0 10px;
+
+  &__text {
+    flex: 1;
+
+    h3,p {
+      padding-bottom: 10px;
+    }
+  }
+
+  &__record {
+    animation: spinTheRecord infinite 5s linear;
+    height: 50px;
+    filter: invert(1);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__icon{
+
+    position: absolute;
+  }
+  &__ticker{
+    >.ticker{
+      height: fit-content;
+      margin-left: 30px ;
+      width: 60%;
+    }
+  }
+}
+
+@keyframes spinTheRecord {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

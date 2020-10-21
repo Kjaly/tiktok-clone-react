@@ -1,0 +1,11 @@
+.sidebar{
+  position: absolute;
+  top:50%;
+  right: 10px;
+  color: #fff;
+
+  &__button{
+    padding: 10px;
+    text-align: center;
+  }
+}
